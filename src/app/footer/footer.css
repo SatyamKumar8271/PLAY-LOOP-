@@ -1,0 +1,101 @@
+.footerContainer {
+    background-color: #0b1a2e; /* Deep blue */
+    color: white;
+    padding: 40px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footerContainer > div,
+.footerContainer ul {
+    margin-bottom: 20px;
+}
+
+.play{
+    align-items: center;
+    text-align: center;
+}
+
+.footerContainer .descr {
+    font-size: 18px;
+    color: #a8c5ff;
+    margin: 10px 0;
+}
+
+.foot-panel2 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.foot-panel2 ul {
+    list-style: none;
+    padding: 0;
+    width: 30%;
+    min-width: 200px;
+}
+
+.foot-panel2 p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.foot-panel2 a {
+    display: block;
+    color: #d1e4ff;
+    text-decoration: none;
+    margin-bottom: 8px;
+    transition: color 0.3s ease;
+}
+
+.foot-panel2 a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.foot-panel3 .logo {
+    height: 40px;
+    width: 100px;
+    background-image: url('https://www.google.com/imgres?q=music%20website%20footer%20image&imgurl=https%3A%2F%2Fwww.shutterstock.com%2Fimage-photo%2Fwebsite-header-shot-male-jazz-260nw-2607090291.jpg&imgrefurl=https%3A%2F%2Fwww.shutterstock.com%2Fsearch%2Fmusic-footer&docid=mqE5gz9_p8M6nM&tbnid=TrdFBbdEA4i-fM&vet=12ahUKEwibr-Cp4LGOAxUaSmwGHdjdA1AQM3oECGkQAA..i&w=778&h=280&hcb=2&ved=2ahUKEwibr-Cp4LGOAxUaSmwGHdjdA1AQM3oECGkQAA'); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 30px auto;
+}
+
+.foot-panel4 {
+    border-top: 1px solid #3d5c8b;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #c0d6ff;
+}
+
+.foot-panel4 .pages a {
+    margin: 0 10px;
+    color: #b0cfff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.foot-panel4 .pages a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.foot-panel4 .copyright {
+    margin-top: 10px;
+    font-size: 13px;
+    color: #99b2d6;
+}
+@media (max-width: 768px) {
+    .foot-panel2 {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .foot-panel2 ul {
+        width: 100%;
+    }
+}

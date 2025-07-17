@@ -1,0 +1,43 @@
+<p>register works!</p>
+<form [formGroup]="registerForm" (ngSubmit)="register()">
+  <div class="LOGO"> ♫ PLAY-LOOP</div>
+  <!-- Email Input -->
+  <label>Email:</label>
+  <input type="text" formControlName="email" placeholder="Enter your email" />
+  <div *ngIf="isEmailValid()" class="mandatory">
+    Enter a valid email!
+  </div>
+
+  <!-- Password Input -->
+  <label>Password:</label>
+<div class="password-wrapper" style="position: relative;">
+  <input
+    [type]="showPassword ? 'text' : 'password'"
+    formControlName="password"
+    placeholder="Enter your password"
+    style="padding-right: 30px;"
+  />
+  <fa-icon
+    [icon]="showPassword ? faEyeSlash : faEye"
+    (click)="togglePasswordVisibility()"
+    style="position: absolute; right: 10px; top: 8px; cursor: pointer;"
+  ></fa-icon>
+</div>
+  <div *ngIf="isPassValid()" class="mandatory">
+    Password is required!
+  </div>
+
+  <!-- Phone Number input -->
+  <label for="phoneNumber">Phone Number:</label>
+  <input id="phoneNumber" type="text" formControlName="phoneNumber" placeholder="Enter your phone number"/><br/>
+  <div *ngIf="isNumValid()" class="mandatory">
+    Phone Number is required!
+  </div>
+
+  <!-- Login/Register -->
+  <button type="submit" (click)="onRegister()">Register</button><br/>
+  <label for="">Have a account?</label>
+  <button class="log" (click)="navigateUrl('login')">Login</button>
+</form>
+
+<router-outlet></router-outlet>

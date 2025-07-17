@@ -1,0 +1,42 @@
+<form [formGroup]="loginForm" (ngSubmit)="login()">
+  <div class="LOGO"> ♫ PLAY-LOOP</div>
+  <!-- Email Input -->
+  <label>Email:</label>
+  <input type="text" formControlName="email" placeholder="Enter your email" />
+  <!-- <div *ngIf="submitted && loginForm.get('email')?.errors?.['required']" class="mandatory">
+    Email is required!
+  </div>
+  <div *ngIf="submitted && loginForm.get('email')?.errors?.['email']" class="mandatory">
+    Enter a valid email!
+  </div> -->
+  <div *ngIf="isEmailValid()" class="mandatory">
+    Enter a valid email!
+  </div>
+
+  <!-- Password Input -->
+  <label>Password:</label>
+<div class="password-wrapper" style="position: relative;">
+  <input
+    [type]="showPassword ? 'text' : 'password'"
+    formControlName="password"
+    placeholder="Enter your password"
+    style="padding-right: 30px;"
+  />
+  <fa-icon
+    [icon]="showPassword ? faEyeSlash : faEye"
+    (click)="togglePasswordVisibility()"
+    style="position: absolute; right: 10px; top: 8px; cursor: pointer;"
+  ></fa-icon>
+  
+</div>
+  <div *ngIf="isPassValid()" class="mandatory">
+    Password is required!
+  </div>
+  
+  <button type="submit" (click)="onLogin()">Login</button><br/>
+  <label for="">don't have a account?</label>
+  <button (click)="navigateUrl('register')" class="reg">Register</button>
+</form>
+<button (click)="getUserData()">Show User Info</button>
+<button (click)="logout()">Logout</button>
+<router-outlet></router-outlet>
