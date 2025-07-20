@@ -9,7 +9,9 @@
 .footerContainer ul {
     margin-bottom: 20px;
 }
-
+.logo{
+    font-size: 25px;
+}
 .play{
     align-items: center;
     text-align: center;

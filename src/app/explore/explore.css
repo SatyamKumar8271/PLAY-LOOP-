@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.app-container {
+  display: flex;
+  height: 100%;
+  background: #000;
+  color: #fff;
+}
+
+.sidebar {
+  width: 240px;
+  background: linear-gradient(to bottom, #121212, #000);
+  padding: 20px;
+}
+
+.logo {
+  font-size: 22px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.nav {
+  list-style: none;
+}
+
+.nav li {
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.nav li.active {
+  font-weight: bold;
+}
+
+.playlist-btn {
+  background: #222;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.auto-playlists p {
+  margin: 15px 0;
+}
+.active:hover{ 
+  color: red;
+}
+/* explore content */
+.title-song{
+  color: blue;
+  
+}
+
+
+.music-page {
+  background-color: #000;
+  color: white;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.search-container input {
+  width: 100%;
+  max-width: 600px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: none;
+  background-color: #222;
+  color: white;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.filter-btn {
+  background-color: #1f1f1f;
+  color: white;
+  border: none;
+  padding: 15px 25px;
+  font-weight: bold;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.filter-btn:hover {
+  background-color: #333;
+}
+
+.albums-section h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.album-row {
+  display: flex;
+  gap: 30px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  scrollbar-width: none;
+}
+
+.album-row::-webkit-scrollbar {
+  display: none;
+}
+
+.album-card {
+  min-width: 160px;
+  flex-shrink: 0;
+}
+
+.album-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.album-card .title {
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.album-card .subtitle {
+  color: #bbb;
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+.slider-controls {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.slider-btn {
+  background-color: #1f1f1f;
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.circle {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  text-align: center;
+  padding: 0;
+  font-size: 16px;
+}
+.trending-container {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  width: 400px;
+}
+
+.trending-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.rank {
+  font-weight: bold;
+  margin-right: 10px;
+  min-width: 20px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-weight: bold;
+  color: #fff;
+}
+
+.meta {
+  font-size: 0.9em;
+  color: #bbb;
+}
+
+
+.song-list-container {
+  background-color: black;
+  padding: 20px;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.song-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.song-img {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.song-details {
+  flex: 1;
+}
+
+.song-title {
+  font-weight: 600;
+}
+
+.song-artists {
+  font-size: 0.85em;
+  color: #ccc;
+}
+
+.song-fav {
+  margin-right: 20px;
+  font-size: 18px;
+  cursor: pointer;
+  color: white;
+}
+
+.song-duration {
+  width: 40px;
+  text-align: right;
+}

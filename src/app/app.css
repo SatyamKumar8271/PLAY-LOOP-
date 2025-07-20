@@ -1,0 +1,14 @@
+.header{
+    background-color: blue;
+    color: aqua;
+    padding: 20px 30px;
+}
+
+.menus {
+    display: flex;
+    justify-content: space-around;
+    background: #410;
+    color: #fff;
+    padding: 20px;
+    font-size: 30px;
+}

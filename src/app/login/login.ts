@@ -75,11 +75,13 @@ export class login {
           password:this.loginForm.value.password
         };
         localStorage.setItem('loggedInUser',JSON.stringify(userData));
+        localStorage.setItem('isUserLogin','true');
         alert('Login Successfully!!!')
         console.log('Login successful:',userData);
       } else {
         alert('Ohh dada! credential shi daal');
       }
+      this.router.navigate(['music-play']);
     }
   }
   getUserData(){

@@ -10,7 +10,7 @@ import { Home } from "./home/home";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Footer, Home],
+  imports: [RouterOutlet, Footer,Home],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
@@ -28,7 +28,7 @@ export class App {
     this.router.navigate([this.login]);
     this.register = type;
     this.router.navigate([this.register]);
-
+    this.router.navigate([URL]);
   }
   
 }

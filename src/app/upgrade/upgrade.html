@@ -1,0 +1,73 @@
+
+<div class="app-container">
+  <aside class="sidebar">
+    <div class="logo">🎵 PLAY LOOP</div>
+    <ul class="nav">
+      <li class="active">  <div (click)="navigateUrl('home')">HOME</div></li>
+      <li class="active"><div (click)="navigateUrl('library')">LIBRARY</div></li>
+      <li class="active"> <div (click)="navigateUrl('upgrade')">UPGRADE</div></li>
+      <li class="active">  <div (click)="navigateUrl('explore')">EXPLORE</div></li>
+    </ul>
+    <button class="playlist-btn">+ New playlist</button>
+    <div class="auto-playlists">
+      <p>Liked music<br><small>Auto playlist</small></p>
+      <p>Episodes for later<br><small>Auto playlist</small></p>
+    </div>
+  </aside>
+
+<div class="membership-container">
+  <h1>Pick a membership that fits you</h1>
+
+  <div class="plans">
+    <!-- Individual Plan -->
+    <div class="plan-card">
+      <div class="plan-header">
+        <span class="icon">👤</span>
+        <span class="plan-title">Individual</span>
+      </div>
+      <hr />
+      <p class="billing-type">Prepaid or monthly</p>
+      <p class="price">Starts at ₹119.00/month</p>
+         <p class="note">
+        Eligible students only. Annual verification required.
+        <a href="#">Restrictions apply.</a>
+      </p>
+      <button class="btn individual-btn">Get Music Premium</button>
+    </div>
+
+    <!-- Family Plan -->
+    <div class="plan-card">
+      <div class="plan-header">
+        <span class="icon">👨‍👩‍👧‍👦</span>
+        <span class="plan-title">Family</span>
+      </div>
+      <hr />
+      <p class="billing-type">Monthly</p>
+      <p class="price">₹179.00/month</p>
+      <p class="note">
+        Add up to 5 family members (aged 13+) in your household.
+        <a href="#">Restrictions apply.</a>
+      </p>
+      <button class="btn family-btn">Get Family Plan</button>
+    </div>
+
+    <!-- Student Plan -->
+    <div class="plan-card">
+      <div class="plan-header">
+        <span class="icon">🎓</span>
+        <span class="plan-title">Student</span>
+      </div>
+      <hr />
+      <p class="billing-type">Monthly</p>
+      <p class="price">₹59.00/month</p>
+      <p class="note">
+        Eligible students only. Annual verification required.
+        <a href="#">Restrictions apply.</a>
+      </p>
+      <button class="btn student-btn">📎 Get Student Plan</button>
+    </div>
+  </div>
+</div>
+
+
+  

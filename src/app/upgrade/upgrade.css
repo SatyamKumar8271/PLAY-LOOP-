@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.app-container {
+  display: flex;
+  height: 100vh;
+  background: #000;
+  color: #fff;
+}
+
+.sidebar {
+  width: 240px;
+  background: linear-gradient(to bottom, #121212, #000);
+  padding: 20px;
+}
+
+.logo {
+  font-size: 22px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.nav {
+  list-style: none;
+}
+
+.nav li {
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.nav li.active {
+  font-weight: bold;
+}
+
+.playlist-btn {
+  background: #222;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.auto-playlists p {
+  margin: 15px 0;
+} 
+.active:hover{
+ color: red;
+}
+
+.membership-container {
+  background-color: #0f0f0f;
+  color: white;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  width: 100%;
+}
+
+.membership-container h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.plans {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.plan-card {
+  background-color: #1f1f1f;
+  border-radius: 20px;
+  padding: 30px 20px;
+  width: 300px;
+  text-align: left;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+.plan-header {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+hr {
+  border: 0.5px solid #333;
+  margin: 10px 0 20px;
+}
+
+.billing-type {
+  font-size: 13px;
+  color: #aaa;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.note {
+  font-size: 13px;
+  color: #aaa;
+  margin-bottom: 20px;
+}
+
+.note a {
+  color: #2e87ff;
+  text-decoration: none;
+}
+
+.btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.individual-btn {
+  background-color: #23395d;
+  color:  #c9dfff;
+}
+
+.family-btn {
+  background-color: #23395d;
+  color: #c9dfff;
+}
+
+.student-btn {
+  background-color: #1f2d4a;
+  color: #7ab6ff;
+}

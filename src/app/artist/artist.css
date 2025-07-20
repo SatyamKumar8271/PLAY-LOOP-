@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.app-container {
+  display: flex;
+  height: 100%;
+  background: #000;
+  color: #fff;
+}
+
+.sidebar {
+  width: 240px;
+  background: linear-gradient(to bottom, #121212, #000);
+  padding: 20px;
+}
+
+.logo {
+  font-size: 22px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.nav {
+  list-style: none;
+}
+
+.nav li {
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.nav li.active {
+  font-weight: bold;
+}
+
+.playlist-btn {
+  background: #222;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.auto-playlists p {
+  margin: 15px 0;
+} 
+.active:hover{
+ color: red;
+}
+
+.artist-profile {
+  font-family: 'Arial', sans-serif;
+  color: white;
+  background-color: #000;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 40px 20px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.artist-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  object-fit: cover;
+  margin-right: 30px;
+}
+
+.artist-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.verified {
+  font-size: 14px;
+  color: #00ffcc;
+}
+
+.artist-info h1 {
+  font-size: 48px;
+  margin: 10px 0;
+}
+
+.monthly-listeners {
+  color: #ccc;
+}
+
+.controls {
+  margin-top: 15px;
+}
+
+.controls button {
+  background-color: #1db954;
+  border: none;
+  margin-right: 10px;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 20px;
+}
+
+.popular-section {
+  flex: 2;
+}
+
+.track-list {
+  list-style: none;
+  padding: 0;
+}
+
+.track-list li {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.track-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.track-info img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.track-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.streams,
+.duration {
+  font-size: 12px;
+  color: #999;
+}
+
+.artist-pick {
+  flex: -1;
+  padding-left: 240px;
+}
+
+.pick-card {
+  background-color: #222;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.pick-card img {
+  width: 70px;
+  height: 70px;
+  border-radius: 4px;
+}
+
+.posted-by {
+  font-size: 12px;
+  color: #bbb;
+}
