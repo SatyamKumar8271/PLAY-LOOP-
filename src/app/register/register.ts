@@ -71,8 +71,8 @@ export class Register {
       };
 
       let existingUserList:any = localStorage.getItem('registeredInUser') || [];
-      existingUserList = JSON.parse(existingUserList);
       if (existingUserList?.length > 0) {
+        existingUserList = JSON.parse(existingUserList);
          existingUserList = existingUserList.concat([userData]);
          localStorage.setItem('registeredInUser',JSON.stringify(existingUserList));
       } else {

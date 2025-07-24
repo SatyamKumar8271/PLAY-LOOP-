@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { Footer } from "../footer/footer";
 import { RouterOutlet } from '@angular/router';
+import { MusicPlay } from '../music-play/music-play';
 
 @Component({
   selector: 'app-home',
@@ -25,15 +26,12 @@ public register: String | undefined;
     // this.router.navigate([URL]);
   }
 
-  isLoggedIn(): boolean {
-    // Example: Check localStorage/session/token — adjust as needed
-    return localStorage.getItem('isLoggedIn') === 'true';
-  }
-  
+
   handlePlayClick() {
-    if (this.isLoggedIn()) {
+    if (localStorage.getItem('isUserLogin')) {
       this.router.navigate(['music-play']);
-    } else {
+    }
+     else {
       this.router.navigate(['login']);
     }
   }

@@ -78,10 +78,11 @@ export class login {
         localStorage.setItem('isUserLogin','true');
         alert('Login Successfully!!!')
         console.log('Login successful:',userData);
+        this.router.navigate(['music-play']);
       } else {
         alert('Ohh dada! credential shi daal');
       }
-      this.router.navigate(['music-play']);
+      // this.router.navigate(['music-play']);
     }
   }
   getUserData(){

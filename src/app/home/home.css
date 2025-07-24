@@ -121,14 +121,14 @@
   overflow-y: auto;
 }
 
-.search-bar input {
-  width: 100%;
+/* .search-bar input {
+  width: 60%;
   padding: 12px;
   background: #222;
   border: none;
   color: white;
   margin-bottom: 20px;
-}
+} */
 
 .trending {
   display: flex;
@@ -440,7 +440,7 @@ h1:hover{
 }
 
 .search-bar input {
-  width: 100%;
+  width: 60%;
   padding: 12px;
   background: #222;
   border: none;
